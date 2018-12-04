@@ -19,11 +19,11 @@ public class Triangle extends Shape
     }
     public boolean isIsosceles()
     {
-        return a == b || a == c || b == c;
+        return isValidTriangle()&& (a == b || a == c || b == c);
     }
     public boolean isRightTriangle()
     {
-        return (a * a + b * b == c * c)||(a * a + c * c == b * b)||(b * b + c * c == a * a);
+        return isValidTriangle() && ((a * a + b * b == c * c)||(a * a + c * c == b * b)||(b * b + c * c == a * a));
     }
     public boolean isValidTriangle()
     {

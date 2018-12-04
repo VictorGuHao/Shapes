@@ -15,5 +15,8 @@ public class Test
         System.out.println(shapes);
         Shape.sortByAreaPerimeter(shapes);
         System.out.println(shapes);
+        System.out.println(((Triangle)testTriangle).isIsosceles());
+        System.out.println(((Triangle)testTriangle).isRightTriangle());
+        System.out.println(((Triangle)testTriangle).isValidTriangle());
     }
 }
