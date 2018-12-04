@@ -17,4 +17,16 @@ public class Triangle extends Shape
         double s = semiperimeter();
         return Math.sqrt(s * (s-a) * (s-b) * (s-c));
     }
+    public boolean isIsosceles()
+    {
+        return a == b || a == c || b == c;
+    }
+    public boolean isRightTriangle()
+    {
+        return (a * a + b * b == c * c)||(a * a + c * c == b * b)||(b * b + c * c == a * a);
+    }
+    public boolean isValidTriangle()
+    {
+        return a > 0 && b > 0 && c > 0 && (a + b > c) && (a + c > b) && (b + c > a);
+    }
 }
